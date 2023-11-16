@@ -17,6 +17,7 @@
             <span id="snameLength"></span>
             <span id="passwordWar"></span>
             <span id="age"></span>
+            <span id="alphabet"></span>
         </div>
     </div>
 
@@ -29,7 +30,11 @@
                 <form onsubmit="return validateForm()" method='POST' action="/registrace">
                     <input type="text" id="nick" placeholder="prezdivka" name="nick" required>
                     
-                    <input type="checkbox" name="je_plavec" required>
+                    <label for="je_plavec">
+                        <p>je plavec</p>
+                        <input type="checkbox" name="je_plavec" id="je_plavec" required>
+                    </label>
+                    
 
                     <input type="text" id="kanoe_kamarad" placeholder="kamarad" name="kanoe_kamarad">
 

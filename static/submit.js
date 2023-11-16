@@ -52,6 +52,7 @@ function validateFriendName() {
     const regex = /^[a-zA-Z]+$/;
     if (!regex.test(userNameInput.value)) {
         valid = false;
+        return Warnings.english;
     }
 
 }
@@ -120,7 +121,7 @@ const Warnings = {
     pwDontMatch: "Passwords don't match.",
     isUnderFifteen: "Under 15 years old",
     isEighteen: "18",
-    
+    english: "only english alphabet is allowed."
 
 }
 
